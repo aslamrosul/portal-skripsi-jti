@@ -872,9 +872,9 @@
         </div>
       </div>
       <div class="header-badges">
-        <div class="stat-pill"><strong>97</strong> Dosen Peneliti</div>
-        <div class="stat-pill"><strong>8</strong> Lab Riset</div>
-        <div class="stat-pill"><strong>JIP</strong> SINTA 4</div>
+        <div class="stat-pill" style="cursor: pointer;" onclick="switchTab('lecturers')" title="Buka Katalog Dosen"><strong>97</strong> Dosen Peneliti</div>
+        <div class="stat-pill" style="cursor: pointer;" onclick="switchTab('labs')" title="Buka 8 Laboratorium Riset"><strong>8</strong> Lab Riset</div>
+        <div class="stat-pill" style="cursor: pointer;" onclick="switchTab('jip')" title="Buka Publikasi JIP"><strong>JIP</strong> SINTA 4</div>
       </div>
     </div>
   </header>
@@ -906,7 +906,7 @@
         </button>
         <button class="tab-btn" onclick="switchTab('topics')">
           <span>💡 40 Judul Skripsi Terapan</span>
-          <span class="tab-count">25</span>
+          <span class="tab-count">40</span>
         </button>
         <button class="tab-btn" onclick="switchTab('generator')">
           <span>📝 Generator Proposal &amp; Email</span>
@@ -1116,12 +1116,12 @@
 
       const tabs = ['lecturers', 'labs', 'topics', 'generator', 'jip'];
       tabs.forEach(t => {
-        const el = document.getElementById(`tab-${t}`);
+        const el = document.getElementById(`pane-${t}`);
         if (el) {
           if (t === tabId) {
-            el.classList.remove('tab-hidden');
+            el.classList.add('active');
           } else {
-            el.classList.add('tab-hidden');
+            el.classList.remove('active');
           }
         }
       });
