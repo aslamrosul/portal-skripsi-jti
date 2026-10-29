@@ -11,8 +11,8 @@ try {
     Write-Host "Terdeteksi akun GitHub: $user" -ForegroundColor Green
 } catch {
     Write-Host "PERINGATAN: GitHub CLI belum terdeteksi login di sesi ini." -ForegroundColor Yellow
-    Write-Host "Jika menggunakan Git biasa, pastikan repository https://github.com/aqfiazfan/$repoName sudah dibuat." -ForegroundColor Yellow
-    $user = "aqfiazfan"
+    Write-Host "Jika menggunakan Git biasa, pastikan repository https://github.com/aslamrosul/$repoName sudah dibuat." -ForegroundColor Yellow
+    $user = "aslamrosul"
 }
 
 Write-Host "=== Memeriksa / Membuat Repository di GitHub ===" -ForegroundColor Cyan

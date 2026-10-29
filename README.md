@@ -15,7 +15,7 @@ Aplikasi web interaktif berdensitas tinggi (*anti-slop institutional design*) un
 
 ## 🚀 Live Demo
 Website ini dapat diakses secara daring melalui GitHub Pages:  
-👉 **[https://aqfiazfan.github.io/portal-skripsi-jti/](https://aqfiazfan.github.io/portal-skripsi-jti/)**
+👉 **[https://aslamrosul.github.io/portal-skripsi-jti/](https://aslamrosul.github.io/portal-skripsi-jti/)**
 
 ---
 *Dikembangkan dengan data primer dari situs resmi JTI Polinema, SINTA Kemdiktisaintek, dan Google Scholar.*
