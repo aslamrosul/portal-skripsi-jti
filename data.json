@@ -10346,6 +10346,246 @@
       "metodologi": "Web Scraping API, Text Normalization, Fine-Tuned IndoBERT-Base, UMAP Dimension Reduction, HDBSCAN Clustering.",
       "dataset": "Dataset 25.000 Ulasan & Cuitan X/Twitter Terkait Angkutan Kota dan Macet Malang.",
       "output": "Dashboard Web Analisis Sentimen Publik + Model HuggingFace Checkpoint + Policy Brief Report."
+    },
+    {
+      "id": "skripsi-trend-1",
+      "judul": "Rancang Bangun Layer Adaptive Identity Protection Menggunakan Continuous Keystroke Dynamics dan Latent Representation Autoencoder pada Aplikasi Web Enterprise",
+      "kategori": "Cyber Security & AI (Tren 2026)",
+      "lab": "Laboratorium Jaringan dan Keamanan Siber (NSCS)",
+      "dosen_pembimbing": [
+        "Ade Ismail, S.Kom., M.TI",
+        "Erfan Rohadi, ST., M.Eng., Ph.D."
+      ],
+      "urgensi": "Autentikasi tradisional berbasis password dan static MFA rentan terhadap session hijacking dan bot account takeover pasca-login. Diperlukan pengawasan identitas pasif berkelanjutan tanpa mengganggu kenyamanan pengguna.",
+      "solusi": "Pengembangan layer keamanan adaptif non-intrusif yang memantau dinamika pengetikan pengguna secara kontinu, menghasilkan risk score seketika, dan memicu step-up authentication hanya ketika anomali terdeteksi.",
+      "metodologi": "Keystroke Feature Extraction (Flight Time, Hold Time), Unsupervised One-Class Autoencoder, Sliding Window Anomaly Detection, Sub-5ms Latency Inference, REST Security Hooks.",
+      "dataset": "Benchmark Keystroke Biometrics Dataset (CMU Keystroke) + Dataset Interaksi Pengguna Riil Sistem Akademik Polinema.",
+      "output": "Middleware Security Layer (PHP/Node.js) + Model Machine Learning Ringan + Dashboard Pemantauan Sesi Real-Time.",
+      "state_of_art": "IEEE S&P / ACM CCS 2025 Trend: Continuous Behavioral Biometrics & Risk-Based Step-Up Verification."
+    },
+    {
+      "id": "skripsi-trend-2",
+      "judul": "Automated Vulnerability Remediation pada Pipeline CI/CD Menggunakan Multi-Agent System Berbasis LangGraph dan Verifikasi Runtime Sandboxing",
+      "kategori": "Software Engineering & DevSecOps (Tren 2026)",
+      "lab": "Laboratorium Rekayasa Perangkat Lunak (SE)",
+      "dosen_pembimbing": [
+        "Imam Fahrur Rozi, ST., MT.",
+        "Moch. Zawaruddin Abdullah, S.ST., M.Kom"
+      ],
+      "urgensi": "Developer sering kewalahan memperbaiki temuan static analysis security scanner (SAST) secara manual, sementara perbaikan otomatis menggunakan single-prompt LLM rentan menghasilkan kode halusinasi yang memecah fungsionalitas.",
+      "solusi": "Arsitektur multi-agent terkoordinasi (Analyzer Agent, Patch Generator Agent, Sandbox Verifier Agent) yang menghasilkan candidate patch, memverifikasi pada isolated git worktree, dan memvalidasi kelulusan unit test sebelum diserahkan ke human diff review.",
+      "metodologi": "LangGraph State-Graph Orchestration, Static Analysis AST Parsing (Semgrep), Docker Sandboxing, Git Worktree Isolation, Automated Unit & Integration Regression Testing.",
+      "dataset": "OWASP Benchmark Java/PHP/JavaScript + Repository Mahasiswa Terinjeksi Celah Keamanan (SQLi, XSS, SSRF).",
+      "output": "GitHub Action / GitLab CI Plugin Otomatis + Multi-Agent Patch Generator Engine + Dashboard Visual Diff Approval.",
+      "state_of_art": "ACM ICSE / IEEE TSE 2025/2026: Multi-Agent Architecture for Runtime Verification (MAARV) & Self-Healing Code."
+    },
+    {
+      "id": "skripsi-trend-3",
+      "judul": "Implementasi Arsitektur Zero Trust Network Access (ZTNA) Menggunakan Hybrid Post-Quantum Cryptography (ML-KEM) pada WireGuard VPN Jaringan Kampus",
+      "kategori": "Cyber Security & Cloud Network (Tren 2026)",
+      "lab": "Laboratorium Jaringan dan Keamanan Siber (NSCS)",
+      "dosen_pembimbing": [
+        "Vipkas Al Hadid Firdaus, ST., MT.",
+        "Erfan Rohadi, ST., M.Eng., Ph.D."
+      ],
+      "urgensi": "Munculnya ancaman 'Harvest Now, Decrypt Later' akibat komputasi kuantum mengancam algoritma enkripsi konvensional (RSA/ECC) yang saat ini melindungi VPN internal kampus.",
+      "solusi": "Penerapan standar kriptografi pasca-kuantum NIST (ML-KEM / Kyber) yang digabungkan secara hibrida dengan protokol WireGuard VPN untuk menjamin keamanan jangka panjang data sensitif institusi.",
+      "metodologi": "NIST Post-Quantum Standard (FIPS 203 ML-KEM), WireGuard Mesh VPN, FreeIPA Identity Provider, Throughput & Handshake Latency Benchmarking.",
+      "dataset": "Simulasi Lalu Lintas Jaringan Server JTI Polinema (100 concurrent client tunnel sessions).",
+      "output": "Infrastruktur VPN ZTNA Siap Pasca-Kuantum + Paket Konfigurasi Otomatis Linux + Laporan Benchmark Kinerja Jaringan.",
+      "state_of_art": "NIST PQC Standards (2024-2026) & IEEE Communications Surveys: Quantum-Safe Secure Tunneling."
+    },
+    {
+      "id": "skripsi-trend-4",
+      "judul": "Implementasi Edge Vision-Language Model (VLM) pada Single Board Computer untuk Pemantauan Bahaya Keselamatan Kerja Laboratorium Berbasis Qwen2-VL",
+      "kategori": "Computer Vision & Edge AI (Tren 2026)",
+      "lab": "Laboratorium Visi Cerdas dan Sistem Cerdas (IVSS)",
+      "dosen_pembimbing": [
+        "Prof. Dr. Eng. Rosa Andrie Asmara, ST., MT.",
+        "Dr. Ulla Delfana Rosiani, ST., MT."
+      ],
+      "urgensi": "Deteksi objek konvensional (YOLO) hanya mengenali kelas objek yang kaku dan tidak dapat memahami konteks semantik yang kompleks (misalnya: 'mahasiswa menyalakan solder tanpa kacamata pelindung dekat cairan mudah terbakar').",
+      "solusi": "Penerapan model multimodal Vision-Language compact (Qwen2-VL-2B / MobileVLM) yang terkuantisasi (INT4/INT8) untuk inferensi langsung di perangkat edge dengan pemahaman skenario visual natural language.",
+      "metodologi": "Post-Training Quantization (AWQ/GPTQ), Edge Deployment pada NVIDIA Jetson Orin Nano, Prompt Engineering Structured JSON Alert, Streaming RTSP Camera.",
+      "dataset": "Dataset 1.000 Cuplikan Video Simulasi Pelanggaran SOP Keselamatan Kerja di Laboratorium Komputer dan Jaringan.",
+      "output": "Perangkat Edge VLM Mandiri + Web Dashboard Notifikasi Berbahasa Alami + Rekaman Bukti Log Anomali.",
+      "state_of_art": "IEEE CVPR / NeurIPS 2025/2026: Efficient Edge VLMs and Embodied Scene Understanding."
+    },
+    {
+      "id": "skripsi-trend-5",
+      "judul": "Mitigasi Behavioral Concept Drift pada Model Machine Learning Deteksi Ancaman Siber Menggunakan Online Learning Berbasis Wazuh SIEM",
+      "kategori": "Cyber Security & Data Science (Tren 2026)",
+      "lab": "Laboratorium Jaringan dan Keamanan Siber (NSCS)",
+      "dosen_pembimbing": [
+        "Ade Ismail, S.Kom., M.TI",
+        "Yoppy Yunhasnawa, S.ST., M.Sc."
+      ],
+      "urgensi": "Pola aktivitas normal pengguna dan lalu lintas jaringan kampus selalu berubah dari waktu ke waktu (concept drift), menyebabkan model deteksi anomali AI statis mengalami lonjakan false positive atau false negative setelah beberapa bulan.",
+      "solusi": "Pipeline pembelajaran online (*continuous adaptive learning*) yang mampu mendeteksi pergeseran distribusi data (ADWIN / DDM) dan memperbarui bobot model klasifikasi secara bertahap tanpa melupakan pola lama (*catastrophic forgetting*).",
+      "metodologi": "Concept Drift Detection (ADWIN), Incremental Learning (River Python), Wazuh SIEM API Streaming, Memory Replay Buffer.",
+      "dataset": "Log Autentikasi dan Lalu Lintas Jaringan JTI Polinema yang Dikumpulkan Selama 6 Bulan Penuh.",
+      "output": "Modul Adaptif Online Learning untuk SIEM + Visualisasi Kurva Drift Deteksi + Dashboard Metrik Performa Model.",
+      "state_of_art": "IEEE Transactions on Information Forensics and Security 2025: Drift-Adaptive Security Governance."
+    },
+    {
+      "id": "skripsi-trend-6",
+      "judul": "Sistem Verifikasi Sertifikasi Kompetensi Mahasiswa Berbasis W3C Decentralized Identifiers (DID) dan Smart Contracts pada Private Blockchain",
+      "kategori": "IoT & Sistem Terdesentralisasi (Tren 2026)",
+      "lab": "Laboratorium Informatika Terapan (AI)",
+      "dosen_pembimbing": [
+        "Ir. Yan Watequlis Syaifudin, ST., M.MT., Ph.D.",
+        "Yuri Ariyanto, S.Kom., M.Kom."
+      ],
+      "urgensi": "Pemalsuan sertifikat kompetensi dan ijazah digital marak terjadi, sementara sistem verifikasi terpusat rentan terhadap server downtime dan manipulasi database internal.",
+      "solusi": "Penerapan standar identitas terdesentralisasi W3C Verifiable Credentials (VC) dan DID yang dicatat secara permanen dan tahan sensor pada jaringan konsorsium Hyperledger Fabric Polinema.",
+      "metodologi": "W3C DID Standard, Cryptographic Proof (Ed25519), Hyperledger Fabric 2.5, Smart Contract (Chaincode Go), QR Code Verification Web Portal.",
+      "dataset": "Database 500 Sertifikat Uji Kompetensi BNSP Mahasiswa JTI Polinema.",
+      "output": "Jaringan Private Blockchain Konsorsium + Aplikasi Mobile Verifiable Credentials Wallet + Web Portal Verifikator Ijazah.",
+      "state_of_art": "IEEE Blockchain / ACM DLT 2025: Self-Sovereign Identity (SSI) for Higher Education Accreditation."
+    },
+    {
+      "id": "skripsi-trend-7",
+      "judul": "Observabilitas dan Deteksi Anomali Performa Microservices Menggunakan eBPF Kernel Tracing dan Root-Cause Analysis Berbasis LLM",
+      "kategori": "Cloud Computing & AI (Tren 2026)",
+      "lab": "Laboratorium Teknologi Data (DT)",
+      "dosen_pembimbing": [
+        "Luqman Affandi, S.Kom., MMSI",
+        "Agung Nugroho Pramudhita, S.T., M.T."
+      ],
+      "urgensi": "Debugging kegagalan komunikasi antar microservices di lingkungan Kubernetes membutuhkan overhead instrumentasi kode (sidecar proxy) yang membebani CPU dan memori.",
+      "solusi": "Pemantauan zero-overhead di tingkat Linux Kernel menggunakan eBPF untuk melacak latensi sistem calls jaringan, dikombinasikan dengan reasoning model LLM untuk menentukan akar masalah (*root-cause analysis*) insiden server otomatis.",
+      "metodologi": "eBPF (Extended Berkeley Packet Filter), Cilium Observability, OpenTelemetry Tracing, Prometheus, LangChain RCA Agent.",
+      "dataset": "Simulasi Stress Testing Sistem Informasi Pendaftaran Mahasiswa Baru (10.000 request/detik dengan injeksi kegagalan layanan).",
+      "output": "eBPF Kernel Monitoring Agent + Dashboard Latensi Grafana + Laporan Diagnosis Insiden Otomatis Berbasis AI.",
+      "state_of_art": "ACM SIGCOMM / OSDI 2025: eBPF-Powered Kernel-Level Microservices Observability."
+    },
+    {
+      "id": "skripsi-trend-8",
+      "judul": "Aplikasi Survei Lapangan Kolaboratif Real-Time dengan Arsitektur Local-First Menggunakan CRDTs dan WebRTC Mesh Network",
+      "kategori": "Software Engineering & Mobile (Tren 2026)",
+      "lab": "Laboratorium Rekayasa Perangkat Lunak (SE)",
+      "dosen_pembimbing": [
+        "Moch. Zawaruddin Abdullah, S.ST., M.Kom",
+        "Elok Nur Hamdana, S.T., M.T."
+      ],
+      "urgensi": "Tim surveyor lapangan di daerah terpencil sering kali berada di luar jangkauan sinyal internet seluler, sehingga data survei tidak dapat disinkronkan antar anggota tim secara langsung di lapangan.",
+      "solusi": "Penerapan paradigma *Local-First Software* di mana setiap perangkat menyimpan data secara lokal dan dapat saling menyinkronkan data perubahan secara peer-to-peer (P2P) antar ponsel menggunakan jaringan Wi-Fi lokal atau hotspot tanpa perlu internet.",
+      "metodologi": "Local-First Architecture, Conflict-Free Replicated Data Types (Automerge / Yjs), WebRTC DataChannels P2P, IndexedDB, Flutter Mobile.",
+      "dataset": "Formulir Survei Pemetaan Kondisi Jalan dan Fasilitas Umum Daerah Pedesaan Malang Selatan.",
+      "output": "Aplikasi Mobile Local-First + Modul Sinkronisasi Peer-to-Peer Wi-Fi Direct + Benchmark Keandalan Konsistensi Data.",
+      "state_of_art": "ACM Onward! / IEEE Software 2025/2026: Local-First Software & Edge-to-Edge Collaborative Computing."
+    },
+    {
+      "id": "skripsi-trend-9",
+      "judul": "Explainable AI (XAI) untuk Penilaian Kelayakan Kredit P2P Lending UMKM Menggunakan TreeSHAP dan Counterfactual Explanations",
+      "kategori": "Business Analytics & FinTech (Tren 2026)",
+      "lab": "Laboratorium Analisa Bisnis (BA)",
+      "dosen_pembimbing": [
+        "Dr. Rakhmat Arianto, S.ST., M.Kom.",
+        "Hendra Pradibta, SE., M.Sc."
+      ],
+      "urgensi": "Regulasi OJK dan UU Perlindungan Data Pribadi mewajibkan lembaga keuangan memberikan alasan transparan mengapa permohonan pinjaman seseorang ditolak, hal yang sulit dipenuhi oleh model 'black-box' Machine Learning biasa.",
+      "solusi": "Sistem scoring kredit berbasis XGBoost yang dilengkapi penjelasan transparan berbasis TreeSHAP (menjelaskan faktor penentu) dan Counterfactual Explanations (memberikan rekomendasi konkret apa yang harus diperbaiki oleh pemohon pinjaman agar disetujui).",
+      "metodologi": "XGBoost Classifier, TreeSHAP (SHapley Additive exPlanations), DiCE (Diverse Counterfactual Explanations), Streamlit Financial Dashboard.",
+      "dataset": "Dataset Riwayat Kredit 30.000 Debitur UMKM Mikro Lembaga Keuangan.",
+      "output": "Aplikasi Credit Scoring Transparan + Modul Rekomendasi Perbaikan Finansial Otomatis untuk Debitur.",
+      "state_of_art": "ACM FAccT / IEEE Transactions on Computational Social Systems 2025: Actionable Counterfactual Explanations."
+    },
+    {
+      "id": "skripsi-trend-10",
+      "judul": "Deteksi Konten Manipulasi Wajah dan Suara (Deepfake) Real-Time Menggunakan Spatial-Temporal Vision Transformer dan ResNet Audio Spectrogram",
+      "kategori": "Computer Vision & AI (Tren 2026)",
+      "lab": "Laboratorium Visi Cerdas dan Sistem Cerdas (IVSS)",
+      "dosen_pembimbing": [
+        "Prof. Dr. Eng. Rosa Andrie Asmara, ST., MT.",
+        "Dimas Wahyu Wibowo, ST., MT."
+      ],
+      "urgensi": "Penyebaran video dan audio deepfake untuk penipuan finansial (CEO fraud) dan rekayasa identitas biometrik meningkat tajam dan semakin sulit dibedakan oleh mata manusia.",
+      "solusi": "Sistem verifikasi multimodal yang secara simultan memeriksa ketidaksinkronan temporal pada gerakan bibir-kedipan mata (video) serta artefak frekuensi tinggi pada spektrum suara (audio).",
+      "metodologi": "Spatial-Temporal Vision Transformer (TimeSformer), Mel-Frequency Cepstral Coefficients (MFCC), ResNet-18 Audio Classifier, Late Fusion.",
+      "dataset": "Deepfake Detection Challenge (DFDC) + ASVspoof Audio Dataset + Dataset Konten Lokal Berbahasa Indonesia.",
+      "output": "Aplikasi Web Verifikator Keaslian Video + Ekstensi Browser Peringatan Dini Deepfake pada Panggilan Video.",
+      "state_of_art": "IEEE T-PAMI / CVPR 2025: Multimodal Audio-Visual Deepfake Forensics."
+    },
+    {
+      "id": "skripsi-trend-11",
+      "judul": "Deteksi Kerentanan Keamanan Smart Contracts Menggunakan Multi-Agent LLM Debate dan Analisis Statis Slither",
+      "kategori": "Cyber Security & Blockchain (Tren 2026)",
+      "lab": "Laboratorium Informatika Terapan (AI)",
+      "dosen_pembimbing": [
+        "Ir. Yan Watequlis Syaifudin, ST., M.MT., Ph.D.",
+        "Ade Ismail, S.Kom., M.TI"
+      ],
+      "urgensi": "Eksploitasi bug pada kode smart contract (misal: Reentrancy, Integer Overflow, Access Control) menyebabkan kerugian finansial jutaan dolar yang tidak dapat dibatalkan (*irreversible*).",
+      "solusi": "Penggabungan scanner statis deterministik (Slither) dengan debat multi-agent AI (Agent Penyerang vs Agent Pemeriksa) untuk memvalidasi kerentanan logika bisnis yang rumit tanpa false positive.",
+      "metodologi": "Slither Static Analyzer, Multi-Agent Debate Framework, Prompt Consensus Verification, Abstract Syntax Tree (AST) Validation.",
+      "dataset": "Curated Smart Contract Vulnerability Dataset (SmartBugs) berisi 500+ kontrak Solidity rentan.",
+      "output": "CLI Tool Audit Smart Contract Otomatis + Laporan Rekomendasi Patch Keamanan Kode Solidity.",
+      "state_of_art": "ACM CCS / IEEE ICSE 2025/2026: Multi-Agent Consensus for Smart Contract Auditing."
+    },
+    {
+      "id": "skripsi-trend-12",
+      "judul": "Sistem Predictive Maintenance Pompa Air Irigasi Menggunakan TinyML Multimodal Sensor Fusion pada Mikrokontroler ESP32-S3",
+      "kategori": "IoT, Embedded & Smart Farming (Tren 2026)",
+      "lab": "Laboratorium Multimedia dan Perangkat Bergerak (MMT)",
+      "dosen_pembimbing": [
+        "Muhammad Unggul Pamenang, S.ST., M.T.",
+        "Bagas Satya Dian Nugraha, ST., MT."
+      ],
+      "urgensi": "Kerusakan mendadak pada pompa air irigasi pertanian di sentra persawahan pedesaan menyebabkan kekeringan luas dan biaya perbaikan yang mahal.",
+      "solusi": "Pemasangan modul edge computing berdaya ultra-rendah yang menggabungkan sensor getaran akselerometer 3-axis, sensor suara akustik, dan suhu untuk mendeteksi keausan bearing sebelum terjadi kerusakan total.",
+      "metodologi": "FFT (Fast Fourier Transform), Sensor Fusion, Edge Impulse TinyML Neural Network, ESP32-S3 Low Power Sleep Mode, LoRa Gateway.",
+      "dataset": "Data Getaran dan Akustik Pompa Submersible Pertanian Kondisi Normal, Bearing Aus, dan Impeller Tersumbat (1.200 sampel).",
+      "output": "Modul Sensor Fisik Siap Pasang + Firmware Edge TinyML + Dashboard Peringatan Dini Petani.",
+      "state_of_art": "IEEE Transactions on Industrial Informatics 2025: Multimodal TinyML Vibration-Acoustic Analytics."
+    },
+    {
+      "id": "skripsi-trend-13",
+      "judul": "Pengembangan Media Interaktif Penerjemah Bahasa Isyarat Dua Arah Menggunakan MediaPipe Hands dan 3D Avatar Generation Berbasis WebGL",
+      "kategori": "Multimedia & Assistive Tech (Tren 2026)",
+      "lab": "Laboratorium Multimedia dan Perangkat Bergerak (MMT)",
+      "dosen_pembimbing": [
+        "Eka Larasati Amalia, S.ST., MT.",
+        "Dimas Wahyu Wibowo, ST., MT."
+      ],
+      "urgensi": "Komunikasi antara penyandang disabilitas tunarungu dengan masyarakat umum di loket layanan publik sering terkendala ketiadaan juru bahasa isyarat.",
+      "solusi": "Aplikasi dua arah real-time: kamera mengenali gerakan tangan SIBI dan mengubahnya menjadi teks/suara, sementara suara lawan bicara secara otomatis diterjemahkan menjadi animasi gerakan tangan avatar 3D interaktif.",
+      "metodologi": "MediaPipe Hand Tracking, Spatial-Temporal Graph Convolutional Network (ST-GCN), WebGL Three.js 3D Avatar Animation, Speech-to-Text Vosk.",
+      "dataset": "Kamus Bahasa Isyarat Indonesia (SIBI) 150 Kosakata Layanan Publik Dasar.",
+      "output": "Aplikasi Web Kios Interaktif Dua Arah + Model Pengenalan Gerakan Isyarat + Uji Kegunaan Bersama Komunitas Tuli.",
+      "state_of_art": "ACM ASSETS / IEEE Access 2025: Bidirectional Sign Language Translation with 3D Embodied Avatars."
+    },
+    {
+      "id": "skripsi-trend-14",
+      "judul": "Implementasi Graph Retrieval-Augmented Generation (GraphRAG) untuk Konsultasi Diagnostik Kerusakan Perangkat Keras Komputer Berbasis Knowledge Graph",
+      "kategori": "Artificial Intelligence & Knowledge Systems (Tren 2026)",
+      "lab": "Information and Learning Engineering Technology Laboratory (InLET)",
+      "dosen_pembimbing": [
+        "Agung Nugroho Pramudhita, S.T., M.T.",
+        "Dr. Ely Setyo Astuti, ST., MT."
+      ],
+      "urgensi": "RAG berbasis teks biasa sering gagal menghubungkan relasi sebab-akibat multi-langkah (misal: gejala A terhubung dengan komponen B yang mempengaruhi subsistem C).",
+      "solusi": "Penggabungan Large Language Models dengan basis pengetahuan terstruktur Knowledge Graph (Neo4j) untuk penalaran diagnosa teknis yang akurat dan dapat ditelusuri alur logikanya (*traceable reasoning*).",
+      "metodologi": "GraphRAG Pipeline, Neo4j Graph Database, Cypher Query Generation, Triplet Extraction (Subject-Predicate-Object), LLM LLaMA-3.3.",
+      "dataset": "Manual Book 50 Tipe Motherboard, Power Supply, GPU, dan Riwayat Kerusakan Lab Bengkel JTI Polinema.",
+      "output": "Aplikasi Web Diagnostic Assistant + Knowledge Graph Visualizer Interaktif + Evaluasi Falsafah Diagnostik.",
+      "state_of_art": "Microsoft Research / ACM KDD 2025/2026: Graph-based Retrieval-Augmented Generation for Complex Reasoning."
+    },
+    {
+      "id": "skripsi-trend-15",
+      "judul": "Pembelajaran Federasi (Federated Learning) Terdesentralisasi untuk Deteksi Malware Android Tanpa Pengumpulan Data Privasi Pengguna",
+      "kategori": "Cyber Security & Machine Learning (Tren 2026)",
+      "lab": "Laboratorium Jaringan dan Keamanan Siber (NSCS)",
+      "dosen_pembimbing": [
+        "Erfan Rohadi, ST., M.Eng., Ph.D.",
+        "Ade Ismail, S.Kom., M.TI"
+      ],
+      "urgensi": "Pengumpulan data log aplikasi smartphone pengguna ke server terpusat untuk pelatihan model antivirus AI melanggar regulasi privasi UU Perlindungan Data Pribadi.",
+      "solusi": "Model AI dilatih langsung di smartphone masing-masing pengguna secara terdistribusi; hanya bobot model (*gradients*) yang dikirimkan ke server agregasi dengan perlindungan Differential Privacy.",
+      "metodologi": "Federated Averaging (FedAvg), Differential Privacy (DP), Static Feature Extraction APK Android (Permissions & API Calls), Flutter Client, Python Flower Server.",
+      "dataset": "CIC-InvesAndMal2019 Dataset + 200 Sampel Aplikasi Android Legal dan Berbahaya.",
+      "output": "Aplikasi Android Mobile Defense Agent + Server Agregasi Federasi + Laporan Analisis Ketahanan Privasi.",
+      "state_of_art": "IEEE TDSC / ACM TOPS 2025/2026: Decentralized Privacy-Preserving Federated Threat Intelligence."
     }
   ],
   "updated_at": "2026-10-29T11:22:00+07:00"
