@@ -10918,6 +10918,246 @@
       "dataset": "CIC-InvesAndMal2019 Dataset + 200 Sampel Aplikasi Android Legal dan Berbahaya.",
       "output": "Aplikasi Android Mobile Defense Agent + Server Agregasi Federasi + Laporan Analisis Ketahanan Privasi.",
       "state_of_art": "IEEE TDSC / ACM TOPS 2025/2026: Decentralized Privacy-Preserving Federated Threat Intelligence."
+    },
+    {
+      "id": "skripsi-china-1",
+      "judul": "Distilasi Penalar Berantai (Chain-of-Thought Reasoning) DeepSeek-R1 ke Small Language Model On-Premise untuk Otomasi Triage Bug dan Patch Generator pada GitLab JTI Polinema",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Deep Reasoning & Distillation)",
+      "lab": "Laboratorium Rekayasa Perangkat Lunak (SE)",
+      "dosen_pembimbing": [
+        "Imam Fahrur Rozi, ST., MT.",
+        "Moch. Zawaruddin Abdullah, S.ST., M.Kom"
+      ],
+      "urgensi": "Penggunaan cloud API untuk audit kode repository kampus memakan biaya token tinggi dan rentan membocorkan kode internal, sementara model kecil biasa (1.5B/3B) sering gagal melakukan penalaran perbaikan bug yang kompleks tanpa halusinasi.",
+      "solusi": "Melakukan distilasi lintasan penalaran sintesis DeepSeek-R1 ke SLM lokal (Qwen2.5-Coder-1.5B/7B) yang di-deploy on-premise, menghasilkan agent penemu celah dan perekayasa candidate patch otomatis.",
+      "metodologi": "Reasoning Distillation (Synthetic CoT), LoRA Fine-Tuning, vLLM Local Server, Unit Testing Regression Verification.",
+      "dataset": "Defect4J + 200 Repository Proyek Praktikum Mahasiswa JTI Polinema.",
+      "output": "Service GitLab CI Runner Otomatis + Dashboard Visual Diff Approval + Model SLM Terdistilasi Siap Pakai.",
+      "state_of_art": "🇨🇳 Science China Information Sciences (SCIS) 2025 / CAS: Knowledge Distillation of Reasoning Trajectories from Open-Weights Mixture-of-Experts"
+    },
+    {
+      "id": "skripsi-china-2",
+      "judul": "Sistem Multi-Agent Orchestration Berbasis Dynamic Mixture-of-Experts (MoE) Ringan untuk Verifikasi Otomatis Kepatuhan Dokumen Akreditasi LAM-INFOKOM Vokasi",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Deep Reasoning & Distillation)",
+      "lab": "Information and Learning Engineering Technology Laboratory (InLET)",
+      "dosen_pembimbing": [
+        "Agung Nugroho Pramudhita, S.T., M.T.",
+        "Dr. Ely Setyo Astuti, ST., MT."
+      ],
+      "urgensi": "Evaluasi manual ribuan lembar dokumen bukti kinerja program studi (LKPS & LED) menghabiskan waktu berminggu-minggu dan rawan inkonsistensi matriks penilaian kuantitatif.",
+      "solusi": "Pipeline multi-agent dengan router MoE yang membagi tugas ke agen terspesialisasi (Agent Metrik Kuantitatif, Agent Validasi Kurikulum, Agent Bukti Luaran Mahasiswa) untuk menerbitkan laporan kesiapan akreditasi seketika.",
+      "metodologi": "MoE Router (Softmax Top-2 Gating), LangGraph Multi-Agent, OCR Layout Parser (PaddleOCR), RAG Kepatuhan Standar LAM-INFOKOM.",
+      "dataset": "Dokumen Borang Akreditasi D4 TI dan D3 MI Polinema (2020-2025).",
+      "output": "Web Portal Audit Akreditasi Otomatis + Rekomendasi Perbaikan Butir Standar + Generator Skor Prediksi Ketercapaian.",
+      "state_of_art": "🇨🇳 Frontiers of Computer Science (FCS) 2025: Specialized Expert Routing in Complex Multi-Document Compliance Auditing"
+    },
+    {
+      "id": "skripsi-china-3",
+      "judul": "Optimasi Kuantisasi FP8/INT4 dan Sistem Inferensi Small Language Model Berbasis FlashAttention-3 pada Perangkat Edge Server Lab Terbatas",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Deep Reasoning & Distillation)",
+      "lab": "Laboratorium Teknologi Data (DT)",
+      "dosen_pembimbing": [
+        "Luqman Affandi, S.Kom., MMSI",
+        "Mungki Astiningrum, ST., M.Kom."
+      ],
+      "urgensi": "Menjalankan model AI modern di laboratorium kampus sering terbentur keterbatasan VRAM GPU komersial (8GB-16GB), menyebabkan out-of-memory saat inferensi context panjang.",
+      "solusi": "Implementasi kuantisasi bobot-aktivasi modern (AWQ INT4 & FP8 W8A8) yang diintegrasikan dengan FlashAttention-3 memory kernel untuk memangkas konsumsi VRAM hingga 65% tanpa degradasi akurasi signifikan.",
+      "metodologi": "Post-Training Quantization (AWQ/GPTQ), FP8 Execution Engine, TensorRT-LLM / vLLM Optimization, Throughput & TTFT Benchmarking.",
+      "dataset": "MMLU-Indo Benchmark + Evaluasi Kecepatan Token pada Server GPU RTX 3060/4060 Lab DT.",
+      "output": "Runtime Environment Engine Teroptimasi + Container Docker Siap Pasang + Panduan Optimasi Resource GPU Vokasi.",
+      "state_of_art": "🇨🇳 Science China Information Sciences (SCIS) 2025 / Peking Univ: High-Efficiency Inference Systems and Quantization for Foundation Models"
+    },
+    {
+      "id": "skripsi-china-4",
+      "judul": "Sistem Pemantauan Tanggap Bencana Banjir Malang Raya Berbasis Kolaborasi Kawanan Drone Otonom (UAV Swarm) dan Komputasi Tepi 5G/Wi-Fi Mesh",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Low-Altitude Economy & Drones)",
+      "lab": "Laboratorium Jaringan dan Keamanan Siber (NSCS)",
+      "dosen_pembimbing": [
+        "Vipkas Al Hadid Firdaus, ST., MT.",
+        "Erfan Rohadi, ST., M.Eng., Ph.D."
+      ],
+      "urgensi": "Pemantauan banjir bandang di kawasan sungai DAS Brantas sering terkendala matinya BTS seluler dan sulitnya akses darat, sementara 1 drone tunggal memiliki jangkauan baterai yang sangat terbatas.",
+      "solusi": "Pembentukan jaringan ad-hoc terdistribusi (Mesh Network) antar drone pemantau dengan pembagian zona jelajah adaptif dan modul edge AI pada stasiun pangkalan darat portabel untuk pemetaan genangan air real-time.",
+      "metodologi": "OLSR/BATMAN Mesh Routing Protocol, Decentralized Swarm Trajectory Planning, Edge Object Detection YOLOv10-Nano, MAVLink Drone Telemetry.",
+      "dataset": "Peta Topografi DAS Brantas Malang + Simulasi Lalu Lintas Jaringan NS-3 + Cuplikan Video Kamera Drone.",
+      "output": "Protokol Komunikasi Mesh Swarm UAV + Web Dashboard Geospasial Pemantauan Banjir + Model Deteksi Area Rendaman.",
+      "state_of_art": "🇨🇳 IEEE/CAA Journal of Automatica Sinica 2024/2025: Low-Altitude Aerial Intelligent Networks (LAEIN) & Autonomous Swarm Edge Computing"
+    },
+    {
+      "id": "skripsi-china-5",
+      "judul": "Inspeksi Cacat dan Keretakan Panel Surya (Photovoltaic) Kampus Menggunakan Drone Otonom Berbasis Model Vision-Language-Action (VLA) Ringan",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Low-Altitude Economy & Drones)",
+      "lab": "Laboratorium Visi Cerdas dan Sistem Cerdas (IVSS)",
+      "dosen_pembimbing": [
+        "Prof. Dr. Eng. Rosa Andrie Asmara, ST., MT.",
+        "Dr. Ulla Delfana Rosiani, ST., MT."
+      ],
+      "urgensi": "Pengecekan manual ribuan panel surya di atap gedung Polinema berbahaya, lambat, dan sering melewatkan micro-crack atau hot-spot yang menurunkan efisiensi energi secara drastis.",
+      "solusi": "Drone cerdas yang mampu memahami instruksi inspeksi verbal ('periksa deretan panel gedung barat dan tandai hotspot'), terbang secara otonom, dan mengidentifikasi anomali termal-visual secara simultan.",
+      "metodologi": "VLA Prompt-to-Action Mapping, Thermal Image Segmentation, Edge AI pada Raspberry Pi 5 / Jetson Orin, PID Flight Trajectory Control.",
+      "dataset": "Dataset Citra Termal & RGB Panel Surya Atap GKB Polinema (1.500 sampel).",
+      "output": "Drone Inspeksi Prototipe Fungsional + Modul VLA Inferensi Cepat + Laporan Analisis Kerusakan Panel Otomatis.",
+      "state_of_art": "🇨🇳 Science China Information Sciences (SCIS) 2025 / Tsinghua: Embodied Vision-Language-Action Models for Autonomous Low-Altitude Aerial Inspection"
+    },
+    {
+      "id": "skripsi-china-6",
+      "judul": "Manajemen Ruang Udara Rendah Terdesentralisasi (Unmanned Traffic Management) untuk Koridor Pengiriman Logistik Medis Menggunakan Konsorsium Blockchain",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Low-Altitude Economy & Drones)",
+      "lab": "Laboratorium Informatika Terapan (AI)",
+      "dosen_pembimbing": [
+        "Ir. Yan Watequlis Syaifudin, ST., M.MT., Ph.D.",
+        "Yuri Ariyanto, S.Kom., M.Kom."
+      ],
+      "urgensi": "Pertumbuhan armada drone pengantar obat/sampel darah darurat antar rumah sakit di Malang membutuhkan alokasi jalur terbang bebas tabrakan tanpa bergantung pada server tunggal yang rawan peretasan atau server down.",
+      "solusi": "Sistem registrasi rute penerbangan 4D (koordinat ruang + waktu) menggunakan smart contracts Hyperledger Fabric, yang memvalidasi konflik jalur sebelum lepas landas dan mencatat telemetri penerbangan permanen.",
+      "metodologi": "4D Spatio-Temporal Geofencing, Hyperledger Fabric Chaincode (Go), Conflict Resolution Algorithm (A* 3D Time-Space), Web Telemetry Monitor.",
+      "dataset": "Koordinat Koridor Udara Rumah Sakit Saiful Anwar (RSSA) - Polinema - RS Lavalette Malang.",
+      "output": "Platform UTM Terdesentralisasi + Simulasi Alokasi 50 Drone Simultan + Smart Contract Verifikasi Rute.",
+      "state_of_art": "🇨🇳 Journal of Computer Science and Technology (JCST - CAS) 2025: Immutable 4D Flight Reservation & Conflict-Free Low-Altitude Scheduling"
+    },
+    {
+      "id": "skripsi-china-7",
+      "judul": "Implementasi Vision-Language-Action (VLA) pada Lengan Robotik Edukasi untuk Manipulasi Objek dan Sortir Komponen Elektronika Berbasis Perintah Suara Bahasa Indonesia",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Embodied AI & Humanoid Robotics)",
+      "lab": "Laboratorium Visi Cerdas dan Sistem Cerdas (IVSS)",
+      "dosen_pembimbing": [
+        "Prof. Dr. Eng. Cahya Rahmad, ST., M.Kom.",
+        "Budi Harijanto, ST., M.MT."
+      ],
+      "urgensi": "Robot industri tradisional memerlukan pemrograman koordinat kaku (hardcoded path); jika posisi resistor atau IC berubah 1 cm saja, robot gagal mengambil komponen.",
+      "solusi": "Arsitektur Embodied VLA yang menghubungkan pemahaman perintah suara alami pengguna ('ambilkan kapasitor 100uF di sebelah kiri obeng') dengan visi kamera RGB-D dan perencanaan gerak invers kinematika dinamis lengan robotik.",
+      "metodologi": "Open-World Object Grounding (Grounding DINO), Zero-Shot Affordance Detection, Inverse Kinematics (MoveIt/ROS2), Indonesian Speech-to-Text Whisper.",
+      "dataset": "Dataset 50 Komponen Bengkel Elektronika JTI Polinema dalam berbagai orientasi pencahayaan.",
+      "output": "Purwarupa Lengan Robotik 6-DOF Cerdas + Antarmuka Suara Bahasa Indonesia + Tingkat Keberhasilan Grasping > 90%.",
+      "state_of_art": "🇨🇳 Science China Information Sciences (SCIS) 2025 / Tsinghua: Survey on Embodied AI: From Cyberspace to Cyber-Physical World"
+    },
+    {
+      "id": "skripsi-china-8",
+      "judul": "Pemetaan dan Navigasi Spasial 3D Real-Time Robot Layanan Kampus Menggunakan 3D Gaussian Splatting (3DGS) pada Lingkungan Dalam Ruangan Bertingkat",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Embodied AI & Humanoid Robotics)",
+      "lab": "Laboratorium Multimedia dan Perangkat Bergerak (MMT)",
+      "dosen_pembimbing": [
+        "Dimas Wahyu Wibowo, ST., MT.",
+        "Eka Larasati Amalia, S.ST., MT."
+      ],
+      "urgensi": "Pemetaan visual SLAM tradisional (NeRF atau Point Cloud) menghasilkan render yang lambat (kurang dari 5 FPS) dan membutuhkan komputasi masif yang tidak mampu dijalankan robot bergerak.",
+      "solusi": "Pemanfaatan representasi 3D Gaussian Splatting yang mampu merekonstruksi koridor kampus secara fotorealistis dengan kecepatan render > 60 FPS pada perangkat edge, memungkinkan navigasi bebas halangan yang presisi.",
+      "metodologi": "3D Gaussian Splatting (3DGS), Mobile RGB-D Odometry, Octree Collision Mesh, ROS2 Navigation Stack (Nav2).",
+      "dataset": "Rekaman Video Koridor Lantai 1-3 Gedung Kuliah Bersama (GKB) Polinema.",
+      "output": "Model Lingkungan 3DGS Kampus Interaktif + Modul Navigasi Otonom Robot Pelayan + Laporan Komparasi Latensi vs NeRF.",
+      "state_of_art": "🇨🇳 Frontiers of Computer Science (FCS) 2025 / Zhejiang Univ: Real-Time 60+ FPS Radiance Field SLAM for Mobile Embodied Agents"
+    },
+    {
+      "id": "skripsi-china-9",
+      "judul": "Pengenalan Identitas Berkelanjutan Berbasis Gaya Berjalan (Gait Recognition) Menggunakan Spatio-Temporal Graph Convolutional Network (ST-GCN) pada Kamera Pengawas Kampus",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Embodied AI & Humanoid Robotics)",
+      "lab": "Laboratorium Visi Cerdas dan Sistem Cerdas (IVSS)",
+      "dosen_pembimbing": [
+        "Prof. Dr. Eng. Rosa Andrie Asmara, ST., MT.",
+        "Hudan Studiawan, S.Kom., M.Kom., Ph.D."
+      ],
+      "urgensi": "Pengenalan wajah (Face Recognition) CCTV sering gagal total jika target memakai masker, topi, helm, atau membelakangi kamera dari jarak jauh (> 15 meter).",
+      "solusi": "Sistem identifikasi biometrik pasif jarak jauh yang mengekstraksi kerangka sendi tubuh manusia (human skeleton topology) dan mengklasifikasikan ritme gaya berjalan unik pengguna secara real-time.",
+      "metodologi": "Pose Estimation (YOLOv8-Pose / RTMPose), Spatio-Temporal Graph Convolutional Network (ST-GCN), Triplet Loss Metric Learning, Multi-View Angle Invariance.",
+      "dataset": "CASIA-B Gait Dataset Benchmark + Dataset Gaya Berjalan 100 Mahasiswa/Dosen JTI Polinema di Koridor Gedung.",
+      "output": "Modul Analitik CCTV Kampus Cerdas + Dashboard Verifikasi Identitas Jarak Jauh + Evaluasi Akurasi Multi-Sudut.",
+      "state_of_art": "🇨🇳 IEEE/CAA Journal of Automatica Sinica 2025 / CASIA: Cross-View Silhouette-Free Skeleton Gait Analytics in Wide-Area Surveillance"
+    },
+    {
+      "id": "skripsi-china-10",
+      "judul": "Estimasi Hasil Panen dan Deteksi Dini Penyakit Tanaman Apel Malang Menggunakan Fusi Citra Multispektral Drone dan Sensor IoT Tanah Berbasis Multimodal Vision Transformer",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Smart Agriculture & Remote Sensing)",
+      "lab": "Laboratorium Informatika Terapan (AI)",
+      "dosen_pembimbing": [
+        "Ir. Yan Watequlis Syaifudin, ST., M.MT., Ph.D.",
+        "Triana Fatmawati, S.Kom., M.Kom."
+      ],
+      "urgensi": "Petani apel di Kota Batu & Malang mengalami penurunan panen hingga 40% akibat serangan embun tepung (Podosphaera leucotricha) yang terlambat dideteksi sebelum gejalanya tampak di seluruh perkebunan.",
+      "solusi": "Fusi data multimodal yang menggabungkan citra indeks vegetasi (NDVI/NDRE) dari kamera multispektral drone dengan sensor kelembapan tanah dan suhu mikro berbasis LoRaWAN menggunakan Cross-Attention Transformer.",
+      "metodologi": "Multimodal Vision Transformer (Cross-Attention), Vegetation Index (NDVI/GNDVI), LoRaWAN Soil Telemetry, Yield Regression Estimator.",
+      "dataset": "Citra Drone Multispektral Kebun Apel Bumiaji Batu (1.200 kanopi pohon) + Log Sensor IoT Tanah 1 Musim Tanam.",
+      "output": "Dashboard Peta Sebaran Kesehatan Kebun Web GIS + Model Estimasi Tonase Panen + Sistem Rekomendasi Takaran Pupuk Otomatis.",
+      "state_of_art": "🇨🇳 Science China Technological Sciences / CAS 2025: Cross-Modal Drone-Soil Fusion for Zero-Latency Agricultural Diagnostics"
+    },
+    {
+      "id": "skripsi-china-11",
+      "judul": "Peningkatan Resolusi Spasial Citra Satelit Sentinel-2 (Super-Resolution) untuk Pemantauan Irigasi Sawah Menggunakan Lightweight Diffusion Model",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Smart Agriculture & Remote Sensing)",
+      "lab": "Laboratorium Teknologi Data (DT)",
+      "dosen_pembimbing": [
+        "Luqman Affandi, S.Kom., MMSI",
+        "Hendra Pradibta, SE., M.Sc."
+      ],
+      "urgensi": "Citra satelit gratisan Sentinel-2 hanya beresolusi 10 meter/piksel, terlalu buram untuk mendeteksi saluran irigasi tersier sawah yang lebarnya hanya 1-2 meter.",
+      "solusi": "Model generatif difusi terkompresi yang mampu meningkatkan resolusi citra satelit multispektral 4x lipat (menjadi 2.5 meter/piksel) dengan detail tepian kanal air yang tajam dan akurat.",
+      "metodologi": "Denoising Diffusion Probabilistic Model (DDPM), Knowledge Distillation, Residual Swin-Transformer Backbones, Water Index Calculation (MNDWI).",
+      "dataset": "Pasangan Citra Satelit Sentinel-2 vs Citra Udara Resolusi Tinggi Wilayah Pertanian Kabupaten Malang.",
+      "output": "API Layanan Super-Resolution Geospasial + Peta Deteksi Aliran Air Irigasi Sawah + Perbandingan PSNR/SSIM.",
+      "state_of_art": "🇨🇳 IEEE/CAA Journal of Automatica Sinica 2025 / Wuhan Univ: Efficient Latent Diffusion for Real-Time Earth Observation Downscaling"
+    },
+    {
+      "id": "skripsi-china-12",
+      "judul": "Sistem Pemilahan Mutu Biji Kopi Pasca-Panen Menggunakan Citra Hiperspektral Kompak dan Arsitektur Convolutional Vision Transformer (CvT) pada Edge AI",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Smart Agriculture & Remote Sensing)",
+      "lab": "Laboratorium Visi Cerdas dan Sistem Cerdas (IVSS)",
+      "dosen_pembimbing": [
+        "Prof. Dr. Eng. Cahya Rahmad, ST., M.Kom.",
+        "Usman Nurhasan, S.Kom., MT."
+      ],
+      "urgensi": "Biji kopi cacat (black beans, sour beans) atau berjamur sulit dibedakan dengan kamera biasa pada konveyor berjalan cepat, merusak cita rasa ekspor kopi Dampit Malang.",
+      "solusi": "Analisis tanda spektral inframerah dekat (near-infrared spectral signature) biji kopi secara simultan menggunakan sensor hiperspektral berbiaya terjangkau dengan klasifikasi model CvT edge berkecepatan 30 biji/detik.",
+      "metodologi": "Hyperspectral Feature Reduction (PCA), Convolutional Vision Transformer (CvT), Edge Deployment NVIDIA Jetson Nano, Solenoid Actuator Ejector Sorting.",
+      "dataset": "Dataset Spektral 3.000 Biji Kopi Robusta & Arabika Dampit (Normal, Fermentasi Berlebih, Jamur, Cacat Fisik).",
+      "output": "Mesin Pemilah Sortir Biji Kopi Purwarupa + Firmware Inferensi Real-Time + Akurasi Klasifikasi > 95%.",
+      "state_of_art": "🇨🇳 Science China Information Sciences (SCIS) 2025 / China Agricultural Univ: Compact Spectral Transformers for High-Throughput Food Quality Inspection"
+    },
+    {
+      "id": "skripsi-china-13",
+      "judul": "Digital Twin Pemodelan dan Prediksi Suhu Server Data Center Kampus Menggunakan Physics-Informed Neural Networks (PINN) untuk Efisiensi Energi Pendingin (Green AI)",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Industrial Digital Twins & Green Computing)",
+      "lab": "Laboratorium Teknologi Data (DT)",
+      "dosen_pembimbing": [
+        "Luqman Affandi, S.Kom., MMSI",
+        "Dwi Puspitasari, S.Kom., M.Kom."
+      ],
+      "urgensi": "Penggunaan listrik untuk pendingin AC ruang server data center Polinema mencapai 45% dari total konsumsi energi; pengaturan suhu statis menyebabkan pemborosan daya saat server sepi beban di malam hari.",
+      "solusi": "Pembangunan replika virtual (Digital Twin) termal server room berbasis hukum termodinamika fisika (PINN) yang secara dinamis memprediksi titik panas (hot-spot) dan mengontrol inverter AC secara presisi.",
+      "metodologi": "Physics-Informed Neural Networks (PINN), Navier-Stokes Heat Convection PDE, IoT Temperature Grid (ESP32), Reinforcement Learning HVAC Control.",
+      "dataset": "Log Suhu 32 Titik Rak Server Data Center JTI Polinema + Beban CPU/GPU Selama 3 Bulan.",
+      "output": "Dashboard Digital Twin 3D Termal Ruang Server + Modul Pengatur Suhu Cerdas Hemat Energi Hingga 22% + Simulasi Distribusi Panas.",
+      "state_of_art": "🇨🇳 Frontiers of Computer Science (FCS) 2025 / Shanghai Jiao Tong: Physics-Guided Neural Surrogate Models for Zero-Carbon Cloud Infrastructure"
+    },
+    {
+      "id": "skripsi-china-14",
+      "judul": "Deteksi Serangan Siber Lanjutan (APT) pada Arsitektur Cloud Kubernetes Menggunakan Telemetri Kernel eBPF dan Graph Neural Network (GNN)",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Industrial Digital Twins & Green Computing)",
+      "lab": "Laboratorium Jaringan dan Keamanan Siber (NSCS)",
+      "dosen_pembimbing": [
+        "Ade Ismail, S.Kom., M.TI",
+        "Vipkas Al Hadid Firdaus, ST., MT."
+      ],
+      "urgensi": "Penyerang Advanced Persistent Threat (APT) sering beroperasi diam-diam di dalam container Kubernetes dengan memodifikasi memori dan mengeksekusi payload tanpa menyentuh file log aplikasi biasa.",
+      "solusi": "Pemasangan sensor eBPF di tingkat kernel Linux tanpa memodifikasi kode container untuk mencatat graph relasi proses, file descriptor, dan soket jaringan, lalu mendeteksi pola anomali menggunakan Graph Convolutional Network.",
+      "metodologi": "eBPF Telemetry (Tetragon/Tracee), Provenance Graph Construction, Inductive Graph Neural Network (GraphSAGE), Anomaly Scoring Engine.",
+      "dataset": "Dataset Simulasi Serangan Siber MITRE ATT&CK pada Klaster Kubernetes Kampus (Privilege Escalation, Container Escape, Cryptomining).",
+      "output": "Agen Keamanan Cloud eBPF Ringan + Visualizer Graph Alur Penyerangan (Attack Provenance Graph) + Alert Real-Time.",
+      "state_of_art": "🇨🇳 Science China Information Sciences (SCIS) 2025 / CAS IIE: Sub-Millisecond Kernel Graph Telemetry for Cloud-Native Zero-Day Exploit Defense"
+    },
+    {
+      "id": "skripsi-china-15",
+      "judul": "Inspeksi Cacat Pengelasan Logam Otomatis pada Industri Manufaktur Presisi Menggunakan Fusi Citra Termal dan Sensor Akustik Ultrasonik Berbasis Edge AI",
+      "kategori": "🇨🇳 Tren Terkini China & Global (Industrial Digital Twins & Green Computing)",
+      "lab": "Laboratorium Rekayasa Perangkat Lunak (SE)",
+      "dosen_pembimbing": [
+        "Moch. Zawaruddin Abdullah, S.ST., M.Kom",
+        "Prof. Dr. Eng. Cahya Rahmad, ST., M.Kom."
+      ],
+      "urgensi": "Cacat las tersembunyi (porositas dan retak internal pada pipa baja) tidak terlihat oleh mata telanjang atau kamera biasa, berisiko tinggi memicu ledakan pipa gas atau kebocoran fluida industri.",
+      "solusi": "Sistem pengujian tak merusak (non-destructive testing) portabel yang menggabungkan respons pantulan gelombang ultrasonik frekuensi tinggi dan profil termografi inframerah saat proses pengelasan berlangsung.",
+      "metodologi": "Ultrasonic Signal Wavelet Transform, Thermal Infrared Computer Vision, Multimodal Early-Fusion MLP-CNN, Edge TensorRT Deployment.",
+      "dataset": "800 Sampel Sambungan Las Pipa Baja Uji Tarik & Tekan Bengkel Mesin Polinema.",
+      "output": "Perangkat Portabel NDT Edge AI + Dashboard Inspeksi Mutu Real-Time + Sertifikat Kelayakan Sambungan Las Digital.",
+      "state_of_art": "🇨🇳 IEEE/CAA Journal of Automatica Sinica 2025 / Harbin Inst of Tech: Real-Time Multimodal Nondestructive Weld Quality Assurance"
     }
   ],
   "updated_at": "2026-10-29T11:22:00+07:00"
